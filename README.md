@@ -26,13 +26,13 @@
 
 ## EXPERIENCE
 
-- 2019 - 2021 : Field Supervisor at PT. Perkasa Karunia Teknik
-- 2022 - 2023 : Staff PPIC, Sales Admin & Sales at PT. Javas Langgeng
+1. 2019 - 2021 : Field Supervisor at PT. Perkasa Karunia Teknik
+1. 2022 - 2023 : Staff PPIC, Sales Admin & Sales at PT. Javas Langgeng
 
 ---
 
 ## KEEP IN TOUCH WITH ME
 
-Instagram : @alfonsus_wiliyanto
-Whatsapp : +62 898 0324 881
-Linkedin : Alfonsus Wiliyanto
+- Instagram : @alfonsus_wiliyanto
+- Whatsapp : +62 898 0324 881
+- Linkedin : Alfonsus Wiliyanto
