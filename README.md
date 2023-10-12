@@ -1,4 +1,4 @@
-# :fa-user: MY PROFILE
+# MY PROFILE
 
 ## SAMUEL NIVIDYAN ALFONSUS WILIYANTO
 
@@ -18,9 +18,9 @@
 
 ## HOBBY
 
-- Gaming :fa-gamepad:
-- Watch Anime :fa-film:
-- Coding :fa-code:
+- Gaming
+- Watch Anime
+- Coding
 
 ---
 
@@ -33,6 +33,6 @@
 
 ## KEEP IN TOUCH WITH ME
 
-:fa-instagram: | @alfonsus_wiliyanto
-:fa-whatsapp: | +62 898 0324 881
-:fa-linkedin: | Alfonsus Wiliyanto
+Instagram : @alfonsus_wiliyanto
+Whatsapp : +62 898 0324 881
+Linkedin : Alfonsus Wiliyanto
