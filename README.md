@@ -16,7 +16,7 @@
 
 ---
 
-## HOBBY
+## HOBBIES
 
 - Gaming
 - Watch Anime
