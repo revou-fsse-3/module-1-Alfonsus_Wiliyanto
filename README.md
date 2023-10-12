@@ -18,9 +18,10 @@
 
 ## HOBBIES
 
-- Gaming
-- Watch Anime
-- Coding
+| Hobby     | Name | Genre     |
+|-------------|-------------|---------------|
+| Gaming      | Mobile Legends | MOBA | Active|
+| Watch Anime  | `Anything`        | Action, Comedy, Adventures      | 
 
 ---
 
@@ -33,6 +34,8 @@
 
 ## KEEP IN TOUCH WITH ME
 
-- Instagram : @alfonsus_wiliyanto
-- Whatsapp : +62 898 0324 881
-- Linkedin : Alfonsus Wiliyanto
+- Instagram : [@alfonsus_wilyanto](https://www.instagram.com/alfonsus_wiliyanto/)
+- Whatsapp : [+62 898 0324 881](https://wa.me/+628980324881)
+- Linkedin : [Alfonsus Wiliyanto](https://www.linkedin.com/in/samuel-nividyan-alfonsus-wiliyanto-742b30211/)
+
+
