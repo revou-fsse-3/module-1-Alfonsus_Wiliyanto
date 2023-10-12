@@ -6,7 +6,7 @@
 
 *Hi there, __Alfon__ here !*
 
-![Profile](Profile.jpg)
+![Profile](assets/Profile.jpg)
 
 ---
 
@@ -37,5 +37,3 @@
 - Instagram : [@alfonsus_wilyanto](https://www.instagram.com/alfonsus_wiliyanto/)
 - Whatsapp : [+62 898 0324 881](https://wa.me/+628980324881)
 - Linkedin : [Alfonsus Wiliyanto](https://www.linkedin.com/in/samuel-nividyan-alfonsus-wiliyanto-742b30211/)
-
-
