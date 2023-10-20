@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Cointile | Homepage</title>
+  </head>
+  <body>
+
+    <div class="modalContainer" id="modalContainer">
+      <div class="modalHeader">
+        <h1>Fill this form</h1>
+        <button class="closeBtn" id="closeBtn">&times;</button>
+      </div>
+      <div class="modalForm">
+        <form action="">
+          <label for="user">Username</label><br>
+          <input type="text" id="user" minlength="3" required><br>
+          <label for="email">E-mail</label><br>
+          <input type="email" id="email" placeholder="example@gmail.com" required><br>
+          <label for="teleId">Telegram ID</label><br>
+          <input type="text" id="teleId" required><br>
+          <p style="margin-bottom: 5px;">Country</p>
+          <input type="radio" id="indo" name="Country"><label style="margin-left: 5px;" for="indo">Indonesia</label>
+          <input type="radio" id="others" name="Country" value="Other Countries"><label style="margin-left: 5px;" for="others">Other Countries</label><br>
+          <label for="coinAddress">CoinTile Address</label><br>
+          <input type="text"  id="coinAddress" minlength="16" placeholder="16 character of your address" required><br>
+          <input type="button" value="REDEEM !" id="redeem" class="redeemBtn">
+        </form>
+      </div>
+    </div>
+
+    <div id="modalOverlay"></div>
+
+    <nav>
+      <input type="checkbox" id="checked">
+      <label for="checked" class="checkedBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="bars"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+      </label>
+      <img src="assets/logoCoin.png" alt="Cointile" srcset="" class="logoCoin">
+     
+      <ul><!-- underconstruction-->
+      <li><a href="#">Roadmap</li></a> 
+      <li><a href="#">White List</li></a>
+      <li><a href="#">About Us</li></a>
+      
+      </ul>
+    </nav>
+    <div class="main">
+    <div class="container">
+
+      <h1>What's is <br> <strong style="color: #25c823;">COINTILE</strong> ?</h1>
+      <p class="description">
+        Cointile is a groundbreaking decentralized cryptocurrency designed to usher in a new era of financial autonomy and security. Built on the principles of blockchain technology and a commitment to decentralization, Cointile is redefining the way we think about money, transactions, and the very nature of currency itself.
+      </p>
+
+    </div>
+    <div class="videoContainer">
+      <h1>Learn about Cryptocurrency here !</h1>
+      <video width="480" onmouseover="showControl();" onmouseout="hideControl()" id="video">
+        <source src="assets/cryptoVideo.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+    <div class="airdropContainer">
+      <button id="airdropBtn">COLLECT YOUR AIRDROP !</button>
+    </div>
+
+    
+    <script src="main.js"></script>
+  </body>
+</html>
