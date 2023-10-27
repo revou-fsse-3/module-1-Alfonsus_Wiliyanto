@@ -54,7 +54,6 @@
   --primary-color: #edf2fc;
   --secondary-color: #212121;
   --navbar-color: linear-gradient(358.06deg, #edf2fc 5.66%, #d7d7de 93.97%);
-
   --card-color: #edf2fc;
   --shadow-color: rgba(0, 0, 0, 0.5);
 }
@@ -378,7 +377,6 @@ textarea {
   margin: 10px 0px;
 }
 
-
 /* Submit Form */
 .submitBtn input {
   display: block;
@@ -453,7 +451,7 @@ footer {
     left: 0;
     right: 0;
     width: 100%;
-    background: var(--navbar-color);
+    background: #d7d7de;
     height: 0;
     border-top: 1px solid;
     overflow: hidden;
