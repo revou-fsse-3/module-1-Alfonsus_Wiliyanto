@@ -1,0 +1,580 @@
+@keyframes inOut {
+  from {
+    animation-timing-function: ease-in;
+    transform: scale(0.5);
+  }
+  to {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideCoin {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(-600px);
+  }
+}
+@keyframes leftToRight {
+  from {
+    transform: translateX(-150px) rotate(0deg);
+  }
+  to {
+    transform: translateX(0) rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Dark Mode Color Settings*/
+:root {
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
+  --navbar-color: linear-gradient(358.06deg, #edf2fc 5.66%, #d7d7de 93.97%);
+
+  --card-color: #edf2fc;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}
+.darkMode {
+  --primary-color: #2b3139;
+  --secondary-color: whitesmoke;
+  --navbar-color: linear-gradient(358.06deg, #2b3139 5.66%, #212121 93.97%);
+  --card-color: #212121;
+  --shadow-color: rgb(184, 184, 184, 0.1);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background: var(--navbar-color);
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.5);
+  padding: 0px 10px;
+  max-height: 70px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+body {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(0.75rem, 2vw, 1rem);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 0px 24px;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+h4 {
+  font-family: "Vollkorn SC", serif;
+}
+
+/* Navbar Menu and Logo Settings */
+.menuWrapper {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+}
+.menu {
+  padding: 0.5rem;
+  transition: all 0.3s;
+}
+.menu:hover,
+.dropdown li:hover {
+  background: whitesmoke;
+  color: black;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.menu a {
+  margin: 0 1rem;
+}
+.menuButton {
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+/* Logo Settings */
+.logo {
+  width: 150px;
+  margin: 10px 0px;
+}
+
+/* Dropdown Menu Settings and Transistion */
+.dropdown {
+  position: absolute;
+  display: none;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem 0rem;
+  background: var(--navbar-color);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  animation: inOut 0.2s ease 0s 1 normal none;
+}
+.dropdown li {
+  font-family: "Vollkorn", serif;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  font-size: clamp(0.5rem, 2vw, 0.85rem);
+  list-style: none;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem 0;
+}
+.menu:hover .dropdown {
+  display: block;
+}
+
+/* Icon Caret Settings and Transistion */
+.iconCaret {
+  width: 10px;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+.menu:hover .iconCaret {
+  transform: rotate(180deg);
+}
+/* Dark Mode Icon Settings */
+.iconDarkMode {
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Login SignUp Settings */
+.signIn,
+.signUp:hover {
+  background: linear-gradient(358.06deg, #1aa64a 5.66%, #2fba57 93.97%);
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.75rem;
+  color: white;
+  cursor: pointer;
+}
+.signUp {
+  background: transparent;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.75rem;
+  color: var(--secondary-color);
+}
+.lang {
+  background: transparent;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.75rem;
+}
+.lang a {
+  color: var(--secondary-color);
+}
+
+/* Main Content Settings */
+.mainContent {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+  min-height: calc(100vh - 78px);
+  height: fit-content;
+  max-height: 100vh;
+  margin-bottom: 40px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+.topCoin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid var(--card-color);
+  border-radius: 3%;
+  box-shadow: 7px 10px 10px 5px var(--shadow-color);
+  flex: 1 0 1;
+  width: 300px;
+  height: clamp(200px, 30vw, 300px);
+}
+.topCoin h2 {
+  text-align: center;
+  justify-content: space-between;
+}
+.coinSlider {
+  width: 100%;
+  overflow: hidden;
+}
+.coinWrapper {
+  display: flex;
+  align-items: center;
+  animation: slideCoin 12s infinite;
+  width: 100%;
+  /* justify-content: space-evenly; */
+}
+.coin {
+  width: 250px;
+  margin: 0 1.5rem;
+}
+/* Logo Registered */
+.registered {
+  width: clamp(10rem, 60vw, 20rem);
+}
+
+/* Features Settings */
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  gap: 3rem 0;
+  width: 100%;
+  padding: 0 50px;
+  height: calc(100vh + 78px);
+}
+.features div {
+  text-align: center;
+  width: 100%;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  width: 100%;
+}
+.cardContent {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--secondary-color);
+  border-radius: 3%;
+  padding: 2rem 0.5rem;
+}
+.cardContent h4 {
+  padding: 10px 0;
+}
+.cardContent article {
+  height: 5rem;
+}
+.imgFeatures {
+  width: 10rem;
+}
+
+/* Partnership Settings */
+.partner {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem 0;
+  height: calc(100vh + 78px);
+}
+.partner section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+.partnerIcon {
+  padding: 30px;
+  width: 150px;
+}
+#partnerIcon {
+  fill: var(--secondary-color);
+  width: 200px;
+}
+
+/* Review Form Settings */
+/* User Input Area */
+.formContainer {
+  font-family: "Poppins", sans-serif;
+  background: var(--primary-color);
+  padding: 0 20px;
+  margin: 50px auto;
+  width: 100%;
+  max-width: 650px;
+}
+.formContainer h1 {
+  text-align: center;
+  border-bottom: 1px solid var(--secondary-color);
+}
+.userInfo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.userInput:nth-child(2n) {
+  justify-content: end;
+}
+.userInput {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+}
+.userInput label {
+  width: 95%;
+  margin: 5px 0;
+}
+.userInput input {
+  height: 40px;
+  width: 95%;
+  border-radius: 3%;
+  outline: none;
+  border: 1px solid var(--primary-color);
+  padding: 0 10px;
+}
+
+/* Gender Input Area */
+.genderCategory {
+  margin: 15px 0;
+}
+.genderCategory label {
+  padding: 0 20px 0 5px;
+}
+.genderCategory,
+.genderCategory label,
+.submitBtn input {
+  cursor: pointer;
+}
+
+/* Text Area */
+textarea {
+  width: 545px;
+  resize: none;
+  margin: 10px 0px;
+}
+
+
+/* Submit Form */
+.submitBtn input {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background: #d7d7de;
+}
+.submitBtn input:hover {
+  background: #9797c5;
+}
+/* Footer Settings */
+footer {
+  z-index: 1;
+}
+.disclaimer {
+  font-size: 0.7rem;
+  background: var(--navbar-color);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  border-top: 1px solid var(--secondary-color);
+  padding: 10px;
+  width: 100%;
+}
+.disclaimer div a {
+  text-decoration: underline;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Logo hanya muncul ketika mobile */
+.logoMobile {
+  display: none;
+  width: 50px;
+  height: 50px;
+}
+
+/* Page Transistion */
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 3s;
+}
+.animation {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.logos:nth-child(2) {
+  transition-delay: 1s;
+}
+.logos:nth-child(3) {
+  transition-delay: 2s;
+}
+.logos:nth-child(4) {
+  transition-delay: 3s;
+}
+
+/* Styling Mobile */
+@media screen and (max-width: 900px) {
+  header {
+    justify-content: space-between;
+  }
+  nav {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: var(--navbar-color);
+    height: 0;
+    border-top: 1px solid;
+    overflow: hidden;
+  }
+  nav.active {
+    height: fit-content;
+    opacity: 1;
+    animation: fadeIn 0.5s;
+  }
+  .menuWrapper.active,
+  .menuButton.active {
+    height: fit-content;
+    opacity: 1;
+  }
+  .logoMobile {
+    display: block;
+    animation: leftToRight 1s;
+    cursor: pointer;
+  }
+  .logoMobile.rotate {
+    transform: rotate(360deg);
+    transition: all 0.3s;
+  }
+  .menuButton {
+    justify-content: flex-end;
+    margin: 10px;
+    opacity: 0;
+  }
+  .darkModeIcon {
+    display: block;
+  }
+  .menuWrapper {
+    display: block;
+    position: relative;
+    opacity: 0;
+  }
+  .dropdown {
+    position: relative;
+    box-shadow: none;
+  }
+  .menu {
+    text-align: center;
+    margin: 0.5rem;
+  }
+  .menu:hover {
+    color: var(--secondary-color);
+    background: none;
+  }
+}
+
+@media (max-width: 700px) {
+  /* Grid Card */
+  .mainContent {
+    padding: 0px 50px;
+  }
+  .features {
+    margin-top: 10px;
+    height: fit-content;
+  }
+  .cardContent article {
+    height: fit-content;
+  }
+  .cardGrid1 {
+    grid-area: 1 /1 / 2 / span 4;
+  }
+  .cardGrid2 {
+    grid-area: 2 /1 / 3 / span 4;
+  }
+  .cardGrid3 {
+    grid-area: 3 /1 / 4 / span 4;
+  }
+
+  /* Form */
+  .formContainer {
+    min-width: 280px;
+    max-width: 500px;
+  }
+  .userInput {
+    width: 100%;
+  }
+  .userInput:nth-child(2n) {
+    justify-content: space-between;
+  }
+  .genderCategory {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .userInfo {
+    max-height: 380px;
+  }
+  textarea {
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mainContent {
+    padding: 0px 50px;
+  }
+  .features {
+    margin-top: 10px;
+    height: fit-content;
+  }
+  .cardContent article {
+    height: fit-content;
+  }
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .cardGrid1 {
+    grid-area: 1 /1 / 2 / span 3;
+  }
+  .cardGrid2 {
+    grid-area: 2 /1 / 3 / span 3;
+  }
+  .cardGrid3 {
+    grid-area: 3 /1 / 4 / span 3;
+  }
+  textarea {
+    width: 250px;
+  }
+}
